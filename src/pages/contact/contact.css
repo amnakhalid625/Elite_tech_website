@@ -3,9 +3,11 @@
   }
   
   .section-title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    font-family: "Oswald", sans-serif !important;
   }
   
   .section-subtitle {
@@ -24,12 +26,13 @@
   }
   
   .contact-form .btn-primary {
-    background-color: #ab6604;
-    border: none;
-    border-radius: 0;
-    padding: 10px 40px;
-    font-weight: 500;
-    transition: background 0.3s ease;
+    background-color: #683695;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
   }
   
   .contact-form .btn-primary:hover {

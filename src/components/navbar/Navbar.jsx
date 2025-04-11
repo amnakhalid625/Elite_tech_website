@@ -53,8 +53,12 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="nav-item ms-md-3 mt-3 mt-md-0">
-                  <button className="contact-btn">Contact Us</button>
-                </li>
+  <Link to="/contact">
+    <button className="contact-btn">Contact Us</button>
+  </Link>
+</li>
+
+                
               </ul>
             </div>
           </div>
