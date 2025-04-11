@@ -1,12 +1,13 @@
 .services-section {
-    background-color: #f9f9f9;
+    background-color: #fff;
   }
   
   .section-title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    color: #683695;
-    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    font-family: "Oswald", sans-serif !important;
   }
   
   .section-subtitle {
