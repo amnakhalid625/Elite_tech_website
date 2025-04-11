@@ -1,3 +1,4 @@
+import { BrowserRouter } from 'react-router-dom';
 import Navbar from "./components/navbar/Navbar"
 import Home from './pages/home/Home'
 import Capability from './pages/capabilities/Capability'
@@ -9,7 +10,6 @@ import Purpose from './pages/purpose/Purpose'
 import About from './pages/about/AboutUs'
 import Services from "./pages/services/Services"
 import Footer from './pages/footer/Footer'
-import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
@@ -27,7 +27,6 @@ function App() {
         <Bell />
         <About />
         <Purpose />
-
         <Services />
         <Footer />
       </BrowserRouter>
