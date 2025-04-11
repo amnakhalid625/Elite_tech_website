@@ -1,0 +1,145 @@
+.capability-section {
+    width: 100%;
+    background-color: #AB6604; 
+}
+
+.capability-container {
+    background-color: #AB6604;
+    padding: 40px 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.background-butterfly {
+    background-image: url("../../assets/butterfly.png");
+    background-repeat: no-repeat;
+    background-position: right -90px bottom -100px;
+    background-size: 70%;
+}
+
+.content-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.capability-container h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    word-spacing: -0.9px;
+    letter-spacing: -0.9px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    max-width: 600px;
+}
+
+.capability-container p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+.explore-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 8px 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+}
+
+
+.case-studies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    max-width: 800px;
+}
+
+.case-study {
+    padding: 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+.case-label {
+    text-transform: uppercase;
+    font-size: 18px !important;
+    letter-spacing: 1px;
+    margin-bottom: 5px !important;
+    font-weight: 600 !important;
+}
+
+.case-study h3 {
+    font-size: 60px;
+    font-weight: 600 !important;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+
+.view-link {
+    font-style: normal !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .background-butterfly {
+        background-size: 50%;
+        background-position: right -30px bottom -30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .capability-container h1 {
+        font-size: 42px;
+    }
+    
+    .background-butterfly {
+        background-size: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .capability-container {
+        padding: 40px 20px;
+        min-height: 600px;
+    }
+    
+    .capability-container h1 {
+        font-size: 36px;
+    }
+    
+    .background-butterfly {
+        background-size: 55%;
+        background-position: right -20px bottom -20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .capability-container h1 {
+        font-size: 30px;
+        max-width: 100%;
+    }
+    
+    .case-studies {
+        grid-template-columns: 1fr;
+    }
+    
+    .background-butterfly {
+        background-size: 70%;
+        background-position: right -10px bottom -10px;
+    }
+}

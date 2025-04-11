@@ -1,0 +1,248 @@
+.model-container {
+    width: 100%;
+    background-color: #0271b1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .model-background {
+    background-image: url('../../assets/int.webp');
+    background-repeat: no-repeat;
+    background-position: left -90px bottom -100px;
+    background-size: 70%;
+    min-height: 800px;
+    position: relative;
+  }
+  
+  .model-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2,113,177,0.8) 0%, rgba(2,113,177,0) 100%);
+    z-index: 1;
+  }
+  
+  .model-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .model-text {
+    width: 50%;
+    padding: 80px 60px;
+    color: white;
+    backdrop-filter: blur(2px);
+  }
+  
+  .model-text h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 56px;
+    word-spacing: -0.9px;
+    letter-spacing: -0.9px;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .model-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 90%;
+  }
+  
+  .section-buttons {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    padding: 12px 45px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section-buttons:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .section-buttons::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+  }
+  
+  .section-buttons:hover::after {
+    left: 100%;
+  }
+  
+  .case-parent {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+
+  
+  
+  
+  .case-label {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    display: block;
+    color: rgba(255,255,255,0.8);
+    font-weight: 600;
+  }
+  
+  .case1 h3, .case2 h3 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .case1:hover h3, .case2:hover h3 {
+    color: #fff;
+  }
+  
+  .view-link {
+    text-decoration: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .view-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .view-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1400px) {
+    .model-background {
+      background-size: 60%;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .model-background {
+      background-size: 50%;
+    }
+    
+    .model-text {
+      padding: 60px 40px;
+    }
+    
+    .model-text h1 {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .model-background {
+      background-size: 45%;
+      min-height: 700px;
+    }
+    
+    .model-text {
+      width: 55%;
+      padding: 50px 30px;
+    }
+    
+    .model-text h1 {
+      font-size: 42px;
+    }
+    
+    .model-text p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .model-background {
+      background-image: none;
+      min-height: auto;
+    }
+    
+    .model-content {
+      justify-content: space-between;
+    }
+    
+    .model-text {
+      width: 100%;
+      padding: 60px 30px;
+      backdrop-filter: none;
+    }
+    
+    .model-text h1 {
+      font-size: 38px;
+    }
+    
+    .case-parent {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .model-text {
+      padding: 50px 20px;
+    }
+    
+    .model-text h1 {
+      font-size: 32px;
+    }
+    
+    .model-text p {
+      font-size: 15px;
+      max-width: 100%;
+    }
+    
+    .section-buttons {
+      padding: 10px 35px;
+      font-size: 15px;
+    }
+    
+    .case1, .case2 {
+      padding: 25px;
+    }
+  }

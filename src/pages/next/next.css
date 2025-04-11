@@ -1,0 +1,140 @@
+
+
+.next-section {
+    padding: 30px 0;
+    max-width: 1100px;
+    margin: auto;
+    color: white;
+
+  }
+  
+  .next-section h1 {
+    font-family: "Oswald", sans-serif !important;
+    text-align: center;
+    color: black;
+    margin-top: 15px;
+    font-size: 42px;
+  }
+  
+  .next-section .subheading {
+    font-size: 22px;
+    margin-top: 12px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .next-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+    /* gap: 15px; */
+  }
+  
+  .next-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .next-item.large {
+    grid-row: span 2;
+  }
+  
+  .next-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, filter 0.3s ease;
+  }
+  
+  .next-item:hover img {
+    transform: scale(1.1);
+    filter: blur(2px);
+  }
+  
+  .label {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding: 6px 12px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #262626 5%, transparent);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.4s ease;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .next-item:hover .overlay {
+    bottom: 0;
+  }
+  
+  .overlay h3 {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .overlay p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .overlay a {
+    color: #fff;
+    background: #B2B2B2;
+    padding: 8px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .overlay a:hover {
+    background: black;
+    color: #B2B2B2;
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .next-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .next-item {
+      height: 300px;
+    }
+  
+    .next-item img {
+      height: 100%;
+    }
+  
+    .next-item.large {
+      grid-row: auto;
+    }
+    .label{
+      display: none;
+    }
+  }
+  

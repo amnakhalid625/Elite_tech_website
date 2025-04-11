@@ -1,0 +1,54 @@
+.navbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+
+  
+  .logoImg {
+    width: 250px;
+  }
+  
+  .nav-link {
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: white !important;
+    margin: 0 10px;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  .icons {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .searchIcon {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .hamBurger {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Change navbar toggler color */
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
