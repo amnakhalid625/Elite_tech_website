@@ -4,7 +4,7 @@ import aboutImg from '../../assets/about-img.webp'
 
 const About = () => {
   return (
-    <section className="about-modern container-fluid">
+    <section className="about-modern container-fluid" id='about'>
       <div className="container">
         <div className="row align-items-center">
 

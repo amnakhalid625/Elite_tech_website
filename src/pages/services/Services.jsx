@@ -70,7 +70,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="services-section py-5">
+    <section className="services-section py-5 " id='services'>
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="section-title">Our Services</h2>

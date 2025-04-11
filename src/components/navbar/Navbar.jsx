@@ -3,13 +3,14 @@ import logo from '../../assets/bg.png';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
+
 const Navbar = () => {
   return (
     <section className="navbar-container shadow-lg">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="#">
+            <Link className="navbar-brand" to="/">
               <img src={logo} alt="company-logo" className="logo" />
             </Link>
 
@@ -32,24 +33,24 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="#">
+                  <a className="nav-link active" aria-current="page" href="/">
                     Home
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="#">
+                  <a className="nav-link" href="#about">
                     About Us
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="#">
-                    Services
-                  </Link>
+                  <a className="nav-link" href="#objective">
+                  Objective
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="#">
-                    Blog
-                  </Link>
+                  <a className="nav-link" to="#services">
+                   Services
+                  </a>
                 </li>
                 <li className="nav-item ms-md-3 mt-3 mt-md-0">
                   <button className="contact-btn">Contact Us</button>

@@ -3,7 +3,7 @@ import './purpose.css';
 
 const Purpose = () => {
   return (
-    <section className="purpose-section">
+    <section className="purpose-section" id='objective'>
       <div className="purpose-container ">
         <h2 className="purpose-heading">Our Objective</h2>
         <p className="purpose-text">
