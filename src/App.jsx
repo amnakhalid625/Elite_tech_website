@@ -10,6 +10,8 @@ import Purpose from './pages/purpose/Purpose'
 import About from './pages/about/AboutUs'
 import Services from "./pages/services/Services"
 import Footer from './pages/footer/Footer'
+import TestimonialSection from './pages/testimonial/Testimonial';
+import ContactSection from './pages/contact/Contact';
 
 
 function App() {
@@ -28,7 +30,9 @@ function App() {
         <About />
         <Purpose />
         <Services />
+        <TestimonialSection />
         <Footer />
+        <ContactSection />
       </BrowserRouter>
 
     </>

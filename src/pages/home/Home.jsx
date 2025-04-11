@@ -26,8 +26,8 @@ const Home = () => {
                 <div className="col-lg-7 col-md-9 col-sm-11">
                   <div className=" text-start slide1">
                     <p className=" text-white ">
-                    Welcome to Elite Tech Solutions Empowering Your Business with Innovative Technology Solutions                    </p>
-                    <button className="btn btn-outline-light text-uppercase home-btn">Read More</button>
+                    Welcome to Elite Tech Solutions Empowering Your Business with Innovative Technology Solutions  </p>
+                    <button className="btn btn-outline-light text-uppercase home-btn">Get a Free Consultation</button>
                   </div>
                 </div>
               </div>
