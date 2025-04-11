@@ -16,20 +16,21 @@ function App() {
 
 
   return (
-   <>
-   <BrowserRouter>
-   <Navbar />
-   <Home />
-   <Capability />
-   {/* <Model /> */}
-   <Talent />
-   <Next />
-   <Bell />
-   <Purpose />
-   <About />
-   <Services />
-   <Footer />
-   </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Home />
+        <Capability />
+        {/* <Model /> */}
+        <Talent />
+        <Next />
+        <Bell />
+        <About />
+        <Purpose />
+
+        <Services />
+        <Footer />
+      </BrowserRouter>
 
     </>
   )
