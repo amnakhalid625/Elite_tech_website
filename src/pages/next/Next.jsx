@@ -8,7 +8,7 @@ import './next.css';
 
 const Next = () => {
   return (
-    <section className="next-section container-fluid">
+    <section className="next-section container-fluid" id='case-studies'>
       <div className="container text-center">
         <h1>Case Studies</h1>
         <p className="subheading">
