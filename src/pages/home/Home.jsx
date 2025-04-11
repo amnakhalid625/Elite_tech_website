@@ -27,7 +27,15 @@ const Home = () => {
                   <div className=" text-start slide1">
                     <p className=" text-white ">
                     Welcome to Elite Tech Solutions Empowering Your Business with Innovative Technology Solutions  </p>
-                    <button className="btn btn-outline-light text-uppercase home-btn">Get a Free Consultation</button>
+                    <a
+  href="https://wa.me/923403394019"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="btn btn-outline-light text-uppercase home-btn">
+    Get a Free Consultation
+  </button>
+</a>
                   </div>
                 </div>
               </div>
