@@ -19,7 +19,7 @@ const Home = () => {
 
         {/* Slide 1 */}
         <div className="carousel-item active">
-          <img src={homeOne} className="d-block w-100 vh-100 object-fit-cover" alt="Slide 1" />
+          <img src={homeOne} loading='lazy' className="d-block w-100 vh-100 object-fit-cover" alt="Slide 1" />
           <div className="carousel-caption d-flex align-items-center h-100">
             <div className="container">
               <div className="row">
@@ -27,7 +27,7 @@ const Home = () => {
                   <div className=" text-start slide1">
                     <p className=" text-white ">
                     Welcome to Elite Tech Solutions Empowering Your Business with Innovative Technology Solutions                    </p>
-                    <button className="btn btn-outline-light text-uppercase">Read More</button>
+                    <button className="btn btn-outline-light text-uppercase home-btn">Read More</button>
                   </div>
                 </div>
               </div>
@@ -37,14 +37,14 @@ const Home = () => {
 
         {/* Slide 2 */}
         <div className="carousel-item">
-          <img src={homeTwo} className="d-block w-100 vh-100 object-fit-cover" alt="Slide 2" />
+          <img src={homeTwo} loading='lazy' className="d-block w-100 vh-100 object-fit-cover" alt="Slide 2" />
           <div className="carousel-caption d-flex align-items-center h-100">
             <div className="container">
               <div className="row">
                 <div className="col-lg-7 col-md-9 col-sm-11">
                   <div className=" text-start silde2">
                     <p className="text-white">We deliver tailored technology solutions to streamline operations, boost productivity, and drive growth.</p>
-                    <button className="btn btn-outline-light text-uppercase">Know More</button>
+                    <button className="btn btn-outline-light text-uppercase home-btn">Know More</button>
                   </div>
                 </div>
               </div>
@@ -54,14 +54,14 @@ const Home = () => {
 
         {/* Slide 3 */}
         <div className="carousel-item">
-          <img src={homeThree} className="d-block w-100 vh-100 object-fit-cover" alt="Slide 3" />
+          <img src={homeThree} loading='lazy' className="d-block w-100 vh-100 object-fit-cover" alt="Slide 3" />
           <div className="carousel-caption d-flex align-items-center h-100">
             <div className="container">
               <div className="row">
                 <div className="col-lg-7 col-md-9 col-sm-11">
                   <div className=" text-start slide3">
                     <p className=" text-white"> To be the most trusted partner for businesses seeking to leverage technology to drive growth and innovation.</p>
-                    <button className="btn btn-outline-light text-uppercase">Our Vision</button>
+                    <button className="btn btn-outline-light text-uppercase home-btn">Our Vision</button>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@ const Home = () => {
 
         {/* Slide 4 */}
         <div className="carousel-item">
-          <img src={homeFour} className="d-block w-100 vh-100 object-fit-cover" alt="Slide 4" />
+          <img src={homeFour} loading='lazy' className="d-block w-100 vh-100 object-fit-cover" alt="Slide 4" />
           <div className="carousel-caption d-flex align-items-center h-100">
             <div className="container">
               <div className="row">
@@ -79,7 +79,7 @@ const Home = () => {
                   <div className=" text-start slide4">
                     <p>To deliver innovative, scalable, and secure technology solutions..</p>
                   
-                    <button className="btn btn-outline-light text-uppercase">Our Mission</button>
+                    <button className="btn btn-outline-light text-uppercase home-btn">Our Mission</button>
                   </div>
                 </div>
               </div>

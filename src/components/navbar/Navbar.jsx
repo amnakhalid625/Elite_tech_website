@@ -1,47 +1,65 @@
-import React from 'react'
-import { IoSearchSharp } from "react-icons/io5";
-import { GiHamburgerMenu } from "react-icons/gi";
-import logo from '../../assets/elitelogo.png'
-import './navbar.css'
+import React from 'react';
+import logo from '../../assets/bg.png';
+import './navbar.css';
 
 const Navbar = () => {
   return (
-    <>
-      <section className='container-fluid navbar-container'>
-          <nav className="navbar navbar-expand-lg navbar-dark">
-            <div className="container">
-              <a className="navbar-brand" href="#">
-                <img src={logo} alt="logo-img" className='logoImg' />
-              </a>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <a className="nav-link active" href="#">Navigate your next</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Infosys Knowledge Institute</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Investors</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Careers</a>
-                  </li>
-                </ul>
+    <section className="navbar-container">
+      <div className="container">
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <div className="container-fluid">
+            <a className="navbar-brand" href="#">
+              <img src={logo} alt="company-logo" className="logo" />
+            </a>
 
-                <div className='icons'>
-                  <IoSearchSharp className='searchIcon' />
-                  <GiHamburgerMenu className='hamBurger' />
-                </div>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div className="custom-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-            </div>
-          </nav>
-      </section>
-    </>
-  )
-}
+            </button>
 
-export default Navbar
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Services
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Blog
+                  </a>
+                </li>
+                <li className="nav-item ms-md-3 mt-3 mt-md-0">
+                  <button className="contact-btn">Contact Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+  );
+};
+
+export default Navbar;

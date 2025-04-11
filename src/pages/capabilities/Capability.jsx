@@ -11,14 +11,14 @@ const Capability = () => {
                         <p>Build vital capabilities to deliver digital outcomes.</p>
                         <button className="explore-btn">Explore</button>
                         
-                        <div className='case-studies'>
-                            <div className='case-study case1'>
+                        <div className='capability-headings'>
+                            <div className='case-study '>
                                 <p className="case-label">End-to-End Development</p>
                                 <h3>
                                 From concept to deployment, we handle the entire software development lifecycle.</h3>
                             </div>
                             
-                            <div className='case-study case2'>
+                            <div className='case-study'>
                             <p className="case-label">Scalable and Flexible Solutions</p>
 
                                 <h3>
