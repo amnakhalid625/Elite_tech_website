@@ -1,19 +1,38 @@
 import React from 'react';
 import './about.css';
+import aboutImg from '../../assets/about-img.webp'
 
 const About = () => {
   return (
-    <section className="about-section py-5">
+    <section className="about-modern container-fluid">
       <div className="container">
-        <div className="row justify-content-center text-center">
-          <div className="col-lg-8">
-            <h2 className="about-title">Who We Are</h2>
-            <p className="about-description">
-           ELITE TECH is a full-service technology solutions provider, offering custom software, digital innovation, and IT services across industries. Our mission is to empower businesses with scalable digital products and result-driven strategies that push boundaries and deliver measurable impact.
-            </p>
-           
-            <button className=" mt-3 px-4 py-2 rounded-pill about-btn">Learn More</button>
+        <div className="row align-items-center">
+
+          {/* Text Section */}
+          <div className="col-md-6 mb-4 mb-md-0">
+            <div className="about-text">
+              <h2>Who We Are</h2>
+              <p>
+                At Elite Tech, we turn ideas into innovative software. With a blend of creativity, strategy, and tech expertise, we craft solutions that scale, adapt, and lead.
+              </p>
+              <p>
+                Whether it's custom software, digital transformation, or product development — we're your go-to tech team.
+              </p>
+              <button className="btn-explore">Explore More</button>
+            </div>
           </div>
+
+          {/* Image Section */}
+          <div className="col-md-6">
+            <div className="image-wrapper">
+              <img
+                src={aboutImg}
+                alt="About illustration"
+                className="img-fluid rounded-3"
+              />
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

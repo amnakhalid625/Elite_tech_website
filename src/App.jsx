@@ -7,6 +7,7 @@ import Next from './pages/next/Next'
 import Bell from './pages/bell/bell';
 import Purpose from './pages/purpose/Purpose'
 import About from './pages/about/AboutUs'
+import Services from "./pages/services/Services"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
    <Bell />
    <Purpose />
    <About />
+   <Services />
 
     </>
   )

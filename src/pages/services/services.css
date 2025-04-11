@@ -1,0 +1,46 @@
+.services-section {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    color: #683695;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .service-card {
+    background: #fff;
+    transition: 0.3s;
+    border-left: 4px solid #683695;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    color: #683695;
+  }
+  
+  .service-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .service-list {
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 15px;
+    color: #444;
+  }
+  
