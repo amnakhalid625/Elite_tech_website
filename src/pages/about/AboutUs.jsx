@@ -1,6 +1,8 @@
 import React from 'react';
 import './about.css';
 import aboutImg from '../../assets/about-img.webp'
+import pdf from '../../pdf/AmnaKhalidResume.pdf';
+
 
 const About = () => {
   return (
@@ -18,7 +20,7 @@ const About = () => {
               <p>
                 Whether it's custom software, digital transformation, or product development — we're your go-to tech team.
               </p>
-              <button className="btn-explore">Explore More</button>
+           <a href={pdf} download="AmnaKhalidResume.pdf"><button className="btn-explore">Explore More</button> </a>
             </div>
           </div>
 

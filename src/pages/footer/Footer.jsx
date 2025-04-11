@@ -8,7 +8,6 @@ const Footer = () => {
       <div className="container py-5">
         <div className="row gy-4">
 
-          {/* Company Info */}
           <div className="col-md-4">
             <h4 className="footer-logo">Elite Tech Solutions</h4>
             <p className="footer-description">
@@ -16,7 +15,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Links */}
           <div className="col-md-2">
             <h5 className="footer-title">Quick Links</h5>
             <ul className="list-unstyled footer-links">
@@ -27,7 +26,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
           <div className="col-md-3">
             <h5 className="footer-title">Services</h5>
             <ul className="list-unstyled footer-links">
@@ -38,7 +36,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div className="col-md-3">
             <h5 className="footer-title">Contact</h5>
             <p>Email: info@elitetech.com</p>

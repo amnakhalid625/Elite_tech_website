@@ -10,26 +10,23 @@ const Capability = () => {
                         <h1>Custom Software Development</h1>
                         <p>Build vital capabilities to deliver digital outcomes.</p>
                         <button className="explore-btn">Explore</button>
-                        
-                        <div className='capability-headings'>
-                            <div className='case-study '>
-                                <p className="case-label">End-to-End Development</p>
-                                <h3>
-                                From concept to deployment, we handle the entire software development lifecycle.</h3>
-                            </div>
-                            
-                            <div className='case-study'>
-                            <p className="case-label">Scalable and Flexible Solutions</p>
 
-                                <h3>
-                                Our solutions grow with your business, offering flexibility to adapt to changing market conditions.</h3>
+                        <div className='capability-headings'>
+                            <div className='case-study'>
+                                <p className="case-label">End-to-End Development</p>
+                                <h3>From concept to deployment, we handle the entire software development lifecycle.</h3>
+                            </div>
+
+                            <div className='case-study'>
+                                <p className="case-label">Scalable and Flexible Solutions</p>
+                                <h3>Our solutions grow with your business, offering flexibility to adapt to changing market conditions.</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default Capability;
