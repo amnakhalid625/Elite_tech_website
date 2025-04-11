@@ -20,7 +20,9 @@
   }
   
   .purpose-text {
-    font-size: 20px;
-    line-height: 1.6;
-    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 16px;
+    line-height: 1.7;
   }
