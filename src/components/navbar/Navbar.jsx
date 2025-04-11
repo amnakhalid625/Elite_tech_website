@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../assets/bg.png';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -8,9 +9,9 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" to="#">
               <img src={logo} alt="company-logo" className="logo" />
-            </a>
+            </Link>
 
             <button
               className="navbar-toggler"
@@ -31,24 +32,24 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <Link className="nav-link active" aria-current="page" to="#">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="#">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="#">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="#">
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item ms-md-3 mt-3 mt-md-0">
                   <button className="contact-btn">Contact Us</button>

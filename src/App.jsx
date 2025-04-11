@@ -8,12 +8,16 @@ import Bell from './pages/bell/bell';
 import Purpose from './pages/purpose/Purpose'
 import About from './pages/about/AboutUs'
 import Services from "./pages/services/Services"
+import Footer from './pages/footer/Footer'
+import { BrowserRouter } from 'react-router-dom';
+
 
 function App() {
 
 
   return (
    <>
+   <BrowserRouter>
    <Navbar />
    <Home />
    <Capability />
@@ -24,6 +28,8 @@ function App() {
    <Purpose />
    <About />
    <Services />
+   <Footer />
+   </BrowserRouter>
 
     </>
   )
