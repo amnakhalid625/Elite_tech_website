@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/navbar/Navbar";
 import Home from './pages/home/Home';
 import Capability from './pages/capabilities/Capability';
-import Next from './pages/next/Next';
+import CaseStudy from './pages/caseStudy/CaseStudy';
 import Bell from './pages/bell/bell';
 import About from './pages/about/AboutUs';
 import Purpose from './pages/purpose/Purpose';
@@ -21,7 +21,7 @@ function App() {
           <>
             <Home />
             <Capability />
-            <Next />
+            <CaseStudy />
             <About />
             <Purpose />
             <Services />
