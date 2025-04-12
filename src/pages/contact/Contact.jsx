@@ -16,10 +16,16 @@ const ContactSection = () => {
             <input type="text" placeholder="Company Name" />
             <select>
               <option value="">Budget Range (Optional)</option>
-              <option value="under-5k">Under $5,000</option>
-              <option value="5k-10k">$5,000 - $10,000</option>
-              <option value="10k-25k">$10,000 - $25,000</option>
-              <option value="25k+">$25,000+</option>
+              <option value="1k-5k">100pkr - 500</option>
+              <option value="5k-10k">500 - 1000</option>
+              <option value="10k-25k">1000 - 1500</option>
+              <option value="">1500 - 2000</option>
+              <option value="">2000 - 2500</option>
+              <option value="">2500 - 3000</option>
+              <option value="">3000 to more</option>
+
+
+
             </select>
           </div>
           <textarea rows="5" placeholder="Tell us about your project..."></textarea>
