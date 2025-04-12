@@ -35,7 +35,7 @@ const slides = [
 
 const Home = () => {
   return (
-    <section className="carousel slide carousel-fade" data-bs-ride="carousel" id="slider1" data-bs-interval="5000">
+    <section className="carousel slide carousel-fade" data-bs-ride="carousel" id="slider1" data-bs-interval="3000">
       <div className="carousel-indicators">
         {slides.map((_, i) => (
           <button
