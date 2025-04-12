@@ -1,7 +1,7 @@
-import homeTwo from '../../assets/home-img.avif';
-import homeOne from '../../assets/home1.jpg';
-import homeThree from '../../assets/home3.webp';
-import homeFour from '../../assets/home4.webp';
+import homeOne from '../../assets/h1.jpeg';
+import homeTwo from '../../assets/h2.jpeg';
+import homeThree from '../../assets/h3.jpeg';
+import homeFour from '../../assets/h4.jpeg';
 import './home.css'
 
 const Home = () => {
@@ -32,8 +32,8 @@ const Home = () => {
   target="_blank"
   rel="noopener noreferrer"
 >
-  <button className="btn btn-outline-light text-uppercase home-btn">
-    Get a Free Consultation
+  <button className=" btn-outline-light text-uppercase home-btn">
+    Consult Now
   </button>
 </a>
                   </div>
@@ -52,7 +52,7 @@ const Home = () => {
                 <div className="col-lg-7 col-md-9 col-sm-11">
                   <div className=" text-start silde2">
                     <p className="text-white">We deliver tailored technology solutions to streamline operations, boost productivity, and drive growth.</p>
-                    <button className="btn btn-outline-light text-uppercase home-btn">Know More</button>
+                    <button className=" btn-outline-light text-uppercase home-btn">Know More</button>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@ const Home = () => {
                 <div className="col-lg-7 col-md-9 col-sm-11">
                   <div className=" text-start slide3">
                     <p className=" text-white"> To be the most trusted partner for businesses seeking to leverage technology to drive growth and innovation.</p>
-                    <button className="btn btn-outline-light text-uppercase home-btn">Our Vision</button>
+                    <button className=" btn-outline-light text-uppercase home-btn">Our Vision</button>
                   </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const Home = () => {
                   <div className=" text-start slide4">
                     <p>To deliver innovative, scalable, and secure technology solutions..</p>
                   
-                    <button className="btn btn-outline-light text-uppercase home-btn">Our Mission</button>
+                    <button className="btn-outline-light text-uppercase home-btn">Our Mission</button>
                   </div>
                 </div>
               </div>

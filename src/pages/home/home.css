@@ -25,11 +25,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem; /* Ensures the text is properly aligned */
+  /* padding-left: 0rem;  */
 }
 
 .carousel-caption .container {
-  padding: 0; /* Remove extra padding from container */
+  padding: 0; 
 }
 
 .slide1 p,
@@ -38,12 +38,19 @@
 .slide4 p {
   font-family: "Oswald", sans-serif !important;
   font-size: 3.2rem;
-  color: white;
+  color: white ;
   line-height: 1.2;
   word-spacing: -0.9px;
   letter-spacing: -0.9px;
   margin-bottom: 1.5rem;
 }
+.slide1 p{
+  color: #683695 !important;
+}
+.slide3 p{
+  color: #683695 !important;
+}
+
 
 .home-btn {
   font-family: "Poppins", sans-serif !important;
@@ -51,6 +58,26 @@
   border-radius: 0px !important;
   font-weight: 500;
   font-size: 0.95rem;
+}
+.home-btn:hover {
+  background-color: #683695 !important;
+  color: white !important;
+  transition: all 0.5s ease-in;
+  scale: 1.1;
+}
+
+.slide1 button{
+  background-color: white !important;
+  border: 2px solid #683695 !important;
+  color: #683695;
+  font-weight: 500;
+}
+
+.slide3 button{
+  background-color: white !important;
+  border: 2px solid #683695 !important;
+  color: #683695;
+  font-weight: 500;
 }
 
 .sliderButton {
