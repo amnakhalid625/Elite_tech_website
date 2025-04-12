@@ -33,7 +33,7 @@
 }
 
 .slide1 p,
-.silde2 p,
+.slide2 p,
 .slide3 p,
 .slide4 p {
   font-family: "Oswald", sans-serif !important;
@@ -59,44 +59,46 @@
   font-weight: 500;
   font-size: 0.95rem;
 }
+
+
+.slide1 button,.slide3 button{
+  background-color: white !important;
+  border: 2px solid #683695 !important;
+  color: #683695;
+  font-weight: 500;
+}
+
+.slide2 button,.slide4 button{
+  background-color: white !important;
+  border: 2px solid black !important;
+  color: black;
+  font-weight: 500;
+}
+
 .home-btn:hover {
-  background-color: #683695 !important;
-  color: white !important;
   transition: all 0.5s ease-in;
   scale: 1.1;
 }
-
-.slide1 button{
-  background-color: white !important;
-  border: 2px solid #683695 !important;
-  color: #683695;
-  font-weight: 500;
-}
-
-.slide3 button{
-  background-color: white !important;
-  border: 2px solid #683695 !important;
-  color: #683695;
-  font-weight: 500;
-}
-
 .sliderButton {
-  background-color: white !important;
+  background-color: black !important;
+  border: 2px solid white !important;
   border-radius: 50%;
-  width: 10px !important;
-  height: 10px !important;
+  width: 15px !important;
+  height: 15px !important;
   margin: 0 5px;
+  color: black !important;
 }
 
 
 /* Tablets and below */
 @media (max-width: 1024px) {
   .slide1 p,
-  .silde2 p,
+  .slide2 p,
   .slide3 p,
   .slide4 p {
     font-size: 3rem;
   }
+ 
 
   .home-btn {
     padding: 10px 30px !important;
@@ -111,12 +113,12 @@
 /* Mobile screens */
 @media (max-width: 768px) {
   .carousel-caption .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
   }
 
   .slide1 p,
-  .silde2 p,
+  .slide2 p,
   .slide3 p,
   .slide4 p {
     font-size: 1.8rem;
@@ -124,7 +126,7 @@
   }
 
   .home-btn {
-    width: 100%;
+    width: 50%;
     padding: 10px 20px !important;
     font-size: 0.85rem;
   }
@@ -137,11 +139,12 @@
 /* Small phones styling */
 @media (max-width: 480px) {
   .slide1 p,
-  .silde2 p,
+  .slide2 p,
   .slide3 p,
   .slide4 p {
     font-size: 2rem;
   }
+
 
   .home-btn {
     font-size: 0.8rem;
