@@ -1,11 +1,13 @@
 import './contact.css';
+import Swal from 'sweetalert2'
+
 
 const ContactSection = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "00a22c40-b7c7-4daf-9e9f-dbc47dc0d9e0");
+    formData.append("access_key", "28175889-eef6-45dd-9049-dcf482ca18b8");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -20,7 +22,11 @@ const ContactSection = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully!",
+        icon: "success"
+      });
     }
   };
 

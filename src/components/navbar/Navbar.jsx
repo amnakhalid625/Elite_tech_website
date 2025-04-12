@@ -5,6 +5,13 @@ import './navbar.css';
 
 const Navbar = () => {
   return (
+
+
+
+
+
+
+    
     <section className="navbar-container shadow-lg">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
