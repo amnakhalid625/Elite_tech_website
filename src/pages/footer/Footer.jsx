@@ -38,8 +38,8 @@ const Footer = () => {
 
           <div className="col-md-3">
             <h5 className="footer-title">Contact</h5>
-            <p>Email: info@elitetech.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
+            <p>Email: mehakirfan8394@gmail.com</p>
+            <p>Phone: +92 3403394019</p>
             <p>Location: Silicon Valley, CA</p>
           </div>
         </div>

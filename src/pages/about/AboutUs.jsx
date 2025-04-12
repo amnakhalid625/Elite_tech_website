@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import aboutImg from '../../assets/about-img.webp'
+import aboutImg from '../../assets/aboutImg.png';
 import pdf from '../../pdf/AmnaKhalidResume.pdf';
 
 

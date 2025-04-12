@@ -15,8 +15,8 @@
 .background-butterfly {
     background-image: url("../../assets/custom.png");
     background-repeat: no-repeat;
-    background-position: right -90px bottom -100px;
-    background-size: 70%;
+    background-position: right 0px bottom 20px;
+    background-size: 40%;
 }
 
 .content-wrapper {
@@ -108,6 +108,7 @@
     
     .background-butterfly {
         background-size: 45%;
+        background-image: none !important;
     }
 }
 
@@ -138,7 +139,8 @@
     }
     
     .background-butterfly {
-        background-size: 70%;
-        background-position: right -10px bottom -10px;
+        background-image: none !important;
+
     }
+    
 }
