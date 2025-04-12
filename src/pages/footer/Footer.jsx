@@ -15,14 +15,13 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Links */}
           <div className="col-md-2">
             <h5 className="footer-title">Quick Links</h5>
             <ul className="list-unstyled footer-links">
               <li><a href="#case-studies">Case Studies</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
-              <li><Link  to="/contact">Contact</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
@@ -38,8 +37,12 @@ const Footer = () => {
 
           <div className="col-md-3">
             <h5 className="footer-title">Contact</h5>
-            <p>Email: mehakirfan8394@gmail.com</p>
-            <p>Phone: +92 3403394019</p>
+            <p>
+              Email: <a href="mailto:mehakirfan8394@gmail.com" className="contact-link">mehakirfan8394@gmail.com</a>
+            </p>
+            <p>
+              WhatsApp: <a href="https://wa.me/923403394019" target="_blank" rel="noopener noreferrer" className="contact-link">+92 3403394019</a>
+            </p>
             <p>Location: Silicon Valley, CA</p>
           </div>
         </div>
