@@ -5,10 +5,13 @@ import Swal from 'sweetalert2'
 const ContactSection = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
+    const form = event.target;
+    const submitButton = form.querySelector("button[type='submit']");
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
   
+    const formData = new FormData(form);
     formData.append("access_key", "28175889-eef6-45dd-9049-dcf482ca18b8");
-  
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
   
@@ -27,9 +30,13 @@ const ContactSection = () => {
         text: "Message sent successfully!",
         icon: "success"
       });
-      event.target.reset(); 
+      form.reset();
     }
+  
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit";
   };
+  
   
 
 
