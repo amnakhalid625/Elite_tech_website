@@ -5,13 +5,11 @@
   background-color: #fff;
 }
 
-/* Logo styling */
 .logo {
   width: 150px;
   height: 35px;
 }
 
-/* Nav link styles */
 .nav-link {
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
