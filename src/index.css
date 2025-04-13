@@ -4,29 +4,3 @@
 
 
 
-.model{
-    height: 700px;
-    background: transparent;
-    display: flex;
-    align-items: center;
-}
-
-.background-ant{
-    background-image: url("./assets/int.webp");
-    background-repeat: no-repeat;
-    background-position:  left bottom;
-    background-size: contain;  
-}
-.talent{
-    height: 700px;
-    background: transparent;
-    display: flex;
-    align-items: center; 
-}
-
-.talent-buterfly{
-    background-image: url("./assets/duck.avif");
-    background-repeat: no-repeat;
-    background-position:  right bottom;
-    background-size: contain;  
-}
