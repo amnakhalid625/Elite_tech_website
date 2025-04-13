@@ -1,8 +1,8 @@
 import React from 'react'
-import one from '../../assets/one.avif';
-import two from '../../assets/two.avif';
-import three from '../../assets/three.avif';
-import four from '../../assets/four.avif';
+import one from '../../assets/one.png';
+import two from '../../assets/two.png';
+import three from '../../assets/three.png';
+import four from '../../assets/four.png';
 import five from '../../assets/five.webp';
 import './caseStudy.css';
 

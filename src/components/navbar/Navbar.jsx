@@ -1,15 +1,10 @@
-import logo from '../../assets/one.png';
+import logo from '../../assets/logoText.png';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
 
 const Navbar = () => {
   return (
-
-
-
-
-
 
     
     <section className="navbar-container shadow-lg">

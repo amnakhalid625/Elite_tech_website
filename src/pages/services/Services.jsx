@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaShoppingCart, FaBullhorn, FaCloud, FaBrain, FaShieldAlt, FaLightbulb } from 'react-icons/fa';
+import { FaCode, FaShoppingCart, FaBullhorn, FaCloud, FaBrain, FaShieldAlt,FaLightbulb, FaChartLine,FaNetworkWired} from 'react-icons/fa';
 import './services.css';
 
 const servicesData = [
@@ -64,6 +64,27 @@ const servicesData = [
       'Tech Audits & Digital Roadmaps',
       'Staff Augmentation',
       'Product Ownership & Project Management'
+    ]
+  },
+  {
+    icon: <FaChartLine />
+    ,
+    title: 'Fintech Services',
+    items: [
+      'Digital Payments',
+      'Online Lending',
+      'Investment Platforms',
+      'Mobile Banking',
+      'Cryptocurrency Solutions'
+    ]
+  },
+  {
+    icon: <FaNetworkWired />    ,
+    title: 'ERP Solutions',
+    items: [
+      'Financial Management',
+      'Supply Chain Management',
+      'Customer Relationship Management'
     ]
   }
 ];
