@@ -30,7 +30,7 @@ function App() {
             <Footer />
           </>
         } />
-        
+
         <Route path="/contact" element={<ContactSection />} />
       </Routes>
     </BrowserRouter>
