@@ -6,12 +6,12 @@ const ContactSection = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-
+  
     formData.append("access_key", "28175889-eef6-45dd-9049-dcf482ca18b8");
-
+  
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-
+  
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -20,15 +20,17 @@ const ContactSection = () => {
       },
       body: json
     }).then((res) => res.json());
-
+  
     if (res.success) {
       Swal.fire({
         title: "Success!",
         text: "Message sent successfully!",
         icon: "success"
       });
+      event.target.reset(); 
     }
   };
+  
 
 
   return (
