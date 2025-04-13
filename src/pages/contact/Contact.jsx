@@ -46,8 +46,8 @@ const ContactSection = () => {
             <input type="text" placeholder="Company Name" name='company' />
             <select>
               <option value="">Budget Range (Optional)</option>
-              <option value="1k-5k">100pkr - 500</option>
-              <option value="5k-10k">500 - 1000</option>
+              <option value="1k-5k">100$ - 500$</option>
+              <option value="5k-10k">500$ - 1000$</option>
               <option value="10k-25k">1000 - 1500</option>
               <option value="">1500 - 2000</option>
               <option value="">2000 - 2500</option>
