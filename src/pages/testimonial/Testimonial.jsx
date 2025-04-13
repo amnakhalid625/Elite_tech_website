@@ -3,7 +3,7 @@ import './testimonial.css';
 
 const testimonials = [
   {
-    name: "Amit Sharma",
+    name: "Amarpreet Sharma",
     role: "CEO, InnovateX",
     quote: "Elite Tech Solutions transformed our digital presence. Their team delivered exactly what we envisioned, and more!",
   },
