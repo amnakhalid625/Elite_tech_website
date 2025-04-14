@@ -49,7 +49,7 @@ const testimonials = [
 const TestimonialSection = () => {
   return (
     <>
-  <div
+ <div
   className="modal fade"
   id="commentmodal"
   tabIndex="-1"
@@ -57,9 +57,9 @@ const TestimonialSection = () => {
   aria-hidden="true"
 >
   <div className="modal-dialog modal-dialog-centered">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h5 className="modal-title" id="commentModalLabel">Add Your Comment</h5>
+    <div className="modal-content p-4 shadow-sm">
+      <div className="modal-header border-0">
+        <h5 className="modal-title" id="commentModalLabel">Share Your Experience</h5>
         <button
           type="button"
           className="btn-close"
@@ -67,28 +67,52 @@ const TestimonialSection = () => {
           aria-label="Close"
         ></button>
       </div>
+
       <div className="modal-body">
-        <textarea
-          className="form-control"
-          rows="4"
-          placeholder="Write your comment here..."
-        ></textarea>
+        <div className="mb-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Your Name"
+          />
+        </div>
+
+        <div className="mb-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Company / Role"
+          />
+        </div>
+
+        <div className="mb-3">
+          <textarea
+            className="form-control"
+            rows="4"
+            placeholder="Write your comment here..."
+          ></textarea>
+        </div>
       </div>
-      <div className="modal-footer">
+
+      <div className="modal-footer border-0 d-flex justify-content-between">
         <button
           type="button"
-          className="closeBtn"
+          className="btn btn-secondary"
           data-bs-dismiss="modal"
         >
-          Close
+          Cancel
         </button>
-        <button type="button" className="commentBtn">
+        <button
+          type="button"
+          className="commentBtn"
+        >
           Submit Comment
         </button>
       </div>
     </div>
   </div>
 </div>
+
 
    
    
