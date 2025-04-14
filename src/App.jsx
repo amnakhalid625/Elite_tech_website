@@ -10,6 +10,7 @@ import Services from "./pages/services/Services";
 import Footer from './pages/footer/Footer';
 import TestimonialSection from './pages/testimonial/Testimonial';
 import ContactSection from './pages/contact/Contact';
+// import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
             <Bell />
             <TestimonialSection />
             <Footer />
+
+
+
+            
           </>
         } />
 
