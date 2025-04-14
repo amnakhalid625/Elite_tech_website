@@ -18,12 +18,15 @@ const slides = [
     text: 'We deliver tailored technology solutions to streamline operations, boost productivity, and drive growth.',
     btnText: 'Know More',
     colorClass: 'slide2',
+    btnLink: 'https://besttechnologysolution.com'
   },
   {
     img: homeThree,
     text: 'To be the most trusted partner for businesses seeking to leverage technology to drive growth and innovation.',
     btnText: 'Our Vision',
     colorClass: 'slide3',
+     btnLink: 'https://www.brookings.edu/articles/technology-and-the-future-of-growth-challenges-of-change'
+
   },
   {
     img: homeFour,
