@@ -25,10 +25,7 @@ const testimonials = [
 ];
 
 const TestimonialSection = () => {
-
-
-
-  
+ 
   return (
 
 <>    <Swiper
