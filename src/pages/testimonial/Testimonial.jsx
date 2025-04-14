@@ -85,7 +85,7 @@ const TestimonialSection = () => {
         </Swiper>
 
 
- {/* Add Comment Button */}
+  {/* Comment Button */}
  <div className='commentBtnWrapper'>
  <button className=" commentBtn text-center mt-3" onClick={() => alert('Open comment form')}>
         Add Your Comment
