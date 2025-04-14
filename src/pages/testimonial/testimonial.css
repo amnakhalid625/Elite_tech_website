@@ -42,6 +42,11 @@
   .swiper-pagination-bullet-active {
     background-color: #341a5a;
   }
+  .commentBtnWrapper{
+    display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  }
   .commentBtn{
     background-color: #683695;
     color: #fff;
