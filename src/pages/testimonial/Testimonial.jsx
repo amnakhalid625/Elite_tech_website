@@ -58,6 +58,7 @@ const TestimonialSection = () => {
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
+          speed={300}
           autoplay={{
             delay: 2000, 
             disableOnInteraction: false,
