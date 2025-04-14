@@ -48,6 +48,10 @@ const testimonials = [
 
 const TestimonialSection = () => {
   return (
+    <>
+    <div className="modal-dialog modal-dialog-centered">
+  <h1>explore</h1>
+</div>
     <section className="testimonial-section" id="testimonials">
       <div className="container">
         <div className="section-header text-center mb-5">
@@ -86,8 +90,8 @@ const TestimonialSection = () => {
 
 
   {/* Comment Button for testimonial */}
- <div className='commentBtnWrapper'>
- <button className=" commentBtn text-center mt-3" onClick={() => alert('Open comment form')}>
+ <div className='commentBtnWrapper '>
+ <button className=" commentBtn text-center mt-3" data-bs-toggle="modal" data-bs-target="#commentmodal" >
         Add Your Comment
       </button>
 
@@ -95,6 +99,7 @@ const TestimonialSection = () => {
 
       </div>
     </section>
+    </>
   );
 };
 
