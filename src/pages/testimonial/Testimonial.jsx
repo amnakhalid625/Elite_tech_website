@@ -53,6 +53,8 @@ const TestimonialSection = () => {
         <div className="section-header text-center mb-5">
           <h2>What Our Clients Say</h2>
           <p>Real stories from businesses we’ve helped grow.</p>
+
+          
         </div>
 
         <Swiper
@@ -81,6 +83,13 @@ const TestimonialSection = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+
+ {/* Add Comment Button */}
+ <button className=" commentBtn text-center mt-3" onClick={() => alert('Open comment form')}>
+        Add Your Comment
+      </button>
+
       </div>
     </section>
   );
