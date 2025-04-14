@@ -33,6 +33,8 @@ const slides = [
     text: 'To deliver innovative, scalable, and secure technology solutions.',
     btnText: 'Our Mission',
     colorClass: 'slide4',
+    btnLink: 'https://www.escadrille.org/en/artificial-intelligence/?utm_term=artificial%20intelligence&utm_campaign=News+-+Artificial+Intelligence&utm_source=adwords&utm_medium=ppc&hsa_acc=1976325542&hsa_cam=22379532958&hsa_grp=176669506523&hsa_ad=741641773129&hsa_src=g&hsa_tgt=kwd-10592891&hsa_kw=artificial%20intelligence&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gbraid=0AAAAADRxNePOhW0-WkooAvWLWp5xqkP1y&gclid=CjwKCAjwwe2_BhBEEiwAM1I7saEeEReQkX4DKxCvVkS1hRhWCAx7aRDlFoH_DTUs2QmY3W-rDzWxUhoCN4YQAvD_BwE'
+
   },
 ];
 
