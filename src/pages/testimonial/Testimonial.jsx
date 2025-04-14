@@ -1,5 +1,10 @@
 import React from 'react';
 import './testimonial.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
 
 const testimonials = [
   {
@@ -20,7 +25,24 @@ const testimonials = [
 ];
 
 const TestimonialSection = () => {
+
+
+
+  
   return (
+
+<>    <Swiper
+    slidesPerView={3}
+    spaceBetween={30}
+    pagination={{
+      clickable: true,
+    }}
+    modules={[Pagination]}
+    className="mySwiper"
+  >
+    </Swiper>
+
+
     <section className="testimonial-section" id="testimonials">
       <div className="container">
         <div className="section-header text-center mb-5">
@@ -40,6 +62,8 @@ const TestimonialSection = () => {
         </div>
       </div>
     </section>
+    </>
+
   );
 };
 
