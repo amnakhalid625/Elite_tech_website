@@ -34,4 +34,13 @@
     font-style: italic;
     color: #333;
   }
+  .swiper-pagination-bullet {
+    background-color: #683695;
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #341a5a;
+  }
+  
   
