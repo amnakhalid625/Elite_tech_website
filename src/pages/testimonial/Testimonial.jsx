@@ -138,7 +138,7 @@ const TestimonialSection = () => {
         </div>
       </div>
 
-      {/* Testimonials Section */}
+      {/* Testimonials*/}
       <section className="testimonial-section" id="testimonials">
         <div className="container">
           <div className="section-header text-center mb-5">
