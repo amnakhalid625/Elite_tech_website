@@ -17,6 +17,16 @@ const defaultTestimonials = [
     role: "Marketing Head, FinTrend",
     quote: "We saw a 40% increase in engagement after they revamped our website and streamlined our CRM. Incredible team!",
   },
+  {
+    name: "Priya Mehta",
+    role: "Marketing Head, FinTrend",
+    quote: "We saw a 40% increase in engagement after they revamped our website and streamlined our CRM. Incredible team!",
+  },
+  {
+    name: "Priya Mehta",
+    role: "Marketing Head, FinTrend",
+    quote: "We saw a 40% increase in engagement after they revamped our website and streamlined our CRM. Incredible team!",
+  },
 ];
 
 const TestimonialSection = () => {
