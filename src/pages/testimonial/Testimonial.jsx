@@ -29,12 +29,12 @@ const testimonials = [
     quote: "Their SaaS development expertise helped us launch faster with zero downtime. Highly recommended!",
   },
   {
-    name: "Rahul Verma",
+    name: "Waheed Verma",
     role: "Founder, Shopwise",
     quote: "Their SaaS development expertise helped us launch faster with zero downtime. Highly recommended!",
   },
   {
-    name: "Rahul Verma",
+    name: "Rahul Arjun",
     role: "Founder, Shopwise",
     quote: "Their SaaS development expertise helped us launch faster with zero downtime. Highly recommended!",
   },
