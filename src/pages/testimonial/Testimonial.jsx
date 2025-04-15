@@ -6,67 +6,81 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
 
+const defaultTestimonials = [
+  {
+    name: "Amarpreet Sharma",
+    role: "CEO, InnovateX",
+    quote: "Elite Tech Solutions transformed our digital presence. Their team delivered exactly what we envisioned, and more!",
+  },
+  {
+    name: "Priya Mehta",
+    role: "Marketing Head, FinTrend",
+    quote: "We saw a 40% increase in engagement after they revamped our website and streamlined our CRM. Incredible team!",
+  },
+];
+
 const TestimonialSection = () => {
-  const [testimonials, setTestimonials] = useState([
-    {
-      name: "Amarpreet Sharma",
-      role: "CEO, InnovateX",
-      quote: "Elite Tech Solutions transformed our digital presence. Their team delivered exactly what we envisioned, and more!",
-    },
-    {
-      name: "Priya Mehta",
-      role: "Marketing Head, FinTrend",
-      quote: "We saw a 40% increase in engagement after they revamped our website and streamlined our CRM. Incredible team!",
-    },
-    {
-      name: "Rahul Verma",
-      role: "Founder, Shopwise",
-      quote: "Their SaaS development expertise helped us launch faster with zero downtime. Highly recommended!",
-    },
-  ]);
+  const [testimonials, setTestimonials] = useState(() => {
+    const stored = localStorage.getItem('testimonials');
+    return stored ? JSON.parse(stored) : defaultTestimonials;
+  });
 
   const [formData, setFormData] = useState({ name: '', role: '', quote: '' });
   const modalRef = useRef();
 
+  // Sync testimonials to localStorage
+  useEffect(() => {
+    localStorage.setItem('testimonials', JSON.stringify(testimonials));
+  }, [testimonials]);
+
   const handleInputChange = (e) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = () => {
     const { name, role, quote } = formData;
-
     if (name && role && quote) {
       const newTestimonial = { name, role, quote };
       setTestimonials(prev => [...prev, newTestimonial]);
       setFormData({ name: '', role: '', quote: '' });
 
+      // Close modal programmatically
       if (modalRef.current) {
         const modalEl = modalRef.current;
         const modalInstance = window.bootstrap.Modal.getInstance(modalEl);
         if (modalInstance) modalInstance.hide();
       }
-    } else {
-      alert('Please fill in all fields.');
     }
   };
 
   return (
     <>
       {/* Modal */}
-      <div className="modal fade" id="commentmodal" tabIndex="-1" aria-labelledby="commentModalLabel" aria-hidden="true" ref={modalRef}>
+      <div
+        className="modal fade"
+        id="commentmodal"
+        tabIndex="-1"
+        aria-labelledby="commentModalLabel"
+        aria-hidden="true"
+        ref={modalRef}
+      >
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content p-4 shadow-sm">
             <div className="modal-header border-0">
-              <h5 className="modal-title">Share Your Experience</h5>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 className="modal-title" id="commentModalLabel">Share Your Experience</h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
 
             <div className="modal-body">
               <div className="mb-3">
                 <input
+                  type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
@@ -74,8 +88,10 @@ const TestimonialSection = () => {
                   placeholder="Your Name"
                 />
               </div>
+
               <div className="mb-3">
                 <input
+                  type="text"
                   name="role"
                   value={formData.role}
                   onChange={handleInputChange}
@@ -83,21 +99,34 @@ const TestimonialSection = () => {
                   placeholder="Role"
                 />
               </div>
+
               <div className="mb-3">
                 <textarea
                   name="quote"
                   value={formData.quote}
                   onChange={handleInputChange}
                   className="form-control"
-                  placeholder="Write your comment here..."
                   rows="4"
-                />
+                  placeholder="Write your comment here..."
+                ></textarea>
               </div>
             </div>
 
             <div className="modal-footer border-0 d-flex justify-content-between">
-              <button className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button className="commentBtn" onClick={handleSubmit}>Submit Comment</button>
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                className="commentBtn"
+                onClick={handleSubmit}
+              >
+                Submit Comment
+              </button>
             </div>
           </div>
         </div>
@@ -138,8 +167,13 @@ const TestimonialSection = () => {
             ))}
           </Swiper>
 
-          <div className='commentBtnWrapper'>
-            <button className="commentBtn text-center mt-3" data-bs-toggle="modal" data-bs-target="#commentmodal">
+          {/* Comment Button */}
+          <div className='commentBtnWrapper text-center mt-3'>
+            <button
+              className="commentBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#commentmodal"
+            >
               Add Your Comment
             </button>
           </div>
