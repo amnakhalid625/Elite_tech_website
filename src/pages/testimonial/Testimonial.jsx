@@ -80,7 +80,7 @@ const TestimonialSection = () => {
           <input
             type="text"
             className="form-control"
-            placeholder="Company / Role"
+            placeholder="Role"
           />
         </div>
 
