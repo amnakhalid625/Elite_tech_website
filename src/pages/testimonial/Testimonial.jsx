@@ -22,11 +22,7 @@ const defaultTestimonials = [
     role: "Marketing Head, FinTrend",
     quote: "We saw a 40% increase in engagement after they revamped our website and streamlined our CRM. Incredible team!",
   },
-  {
-    name: "Priya Mehta",
-    role: "Marketing Head, FinTrend",
-    quote: "We saw a 40% increase in engagement after they revamped our website and streamlined our CRM. Incredible team!",
-  },
+  
 ];
 
 const TestimonialSection = () => {
@@ -38,7 +34,7 @@ const TestimonialSection = () => {
   const [formData, setFormData] = useState({ name: '', role: '', quote: '' });
   const modalRef = useRef();
 
-  // Sync testimonials to localStorage
+  // Save testimonials to localStorage
   useEffect(() => {
     localStorage.setItem('testimonials', JSON.stringify(testimonials));
   }, [testimonials]);
@@ -55,7 +51,7 @@ const TestimonialSection = () => {
       setTestimonials(prev => [...prev, newTestimonial]);
       setFormData({ name: '', role: '', quote: '' });
 
-      // Close modal programmatically
+      // Close modal after submission
       if (modalRef.current) {
         const modalEl = modalRef.current;
         const modalInstance = window.bootstrap.Modal.getInstance(modalEl);
@@ -66,7 +62,7 @@ const TestimonialSection = () => {
 
   return (
     <>
-      {/* Modal */}
+      {/* bootstrap Modal */}
       <div
         className="modal fade"
         id="commentmodal"
@@ -151,7 +147,7 @@ const TestimonialSection = () => {
           </div>
 
           <Swiper
-            slidesPerView={1}
+            slidesPerView={3}
             spaceBetween={30}
             speed={300}
             autoplay={{
@@ -160,6 +156,7 @@ const TestimonialSection = () => {
             }}
             pagination={{ clickable: true }}
             breakpoints={{
+              0: { slidesPerView: 1 },      
               768: { slidesPerView: 2 },
               992: { slidesPerView: 3 },
             }}
