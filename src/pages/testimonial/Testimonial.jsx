@@ -4,22 +4,32 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/autoplay';
+
 import { collection, addDoc, onSnapshot } from "firebase/firestore";
-import db from "../../firebase/firebaseConfig.js";
+import db from "../../firebase/firebaseConfig";
 import { useEffect, useState } from 'react';
+
+const defaultTestimonials = [
+  {
+    name: "Amarpreet Sharma",
+    role: "CEO, InnovateX",
+    quote: "Elite Tech Solutions transformed our digital presence. Their team delivered exactly what we envisioned, and more!",
+  },
+  {
+    name: "Priya Mehta",
+    role: "Marketing Head, FinTrend",
+    quote: "We saw a 40% increase in engagement after they revamped our website and streamlined our CRM. Incredible team!",
+  },
+  {
+    name: "Rahul Verma",
+    role: "Founder, Shopwise",
+    quote: "Their SaaS development expertise helped us launch faster with zero downtime. Highly recommended!",
+  },
+];
 
 const TestimonialSection = () => {
   const [formData, setFormData] = useState({ name: '', role: '', quote: '' });
-  const [testimonials, setTestimonials] = useState([]);
-
-  // Listen to testimonials in Firestore in real-time
-  useEffect(() => {
-    const unsubscribe = onSnapshot(collection(db, "testimonials"), (snapshot) => {
-      const data = snapshot.docs.map(doc => doc.data());
-      setTestimonials(data);
-    });
-    return () => unsubscribe();
-  }, []);
+  const [allTestimonials, setAllTestimonials] = useState([...defaultTestimonials]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -37,85 +47,40 @@ const TestimonialSection = () => {
     }
   };
 
+  // fetch from the  Firestore
+  useEffect(() => {
+    const unsub = onSnapshot(collection(db, "testimonials"), (snapshot) => {
+      const fetched = snapshot.docs.map(doc => doc.data());
+      setAllTestimonials([...defaultTestimonials, ...fetched]);
+    });
+
+    return () => unsub();
+  }, []);
+
   return (
     <>
-      {/* Modal for comment submission */}
-      <div
-        className="modal fade"
-        id="commentmodal"
-        tabIndex="-1"
-        aria-labelledby="commentModalLabel"
-        aria-hidden="true"
-      >
+      {/* Modal for comment */}
+      <div className="modal fade" id="commentmodal" tabIndex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content p-4 shadow-sm">
             <div className="modal-header border-0">
-              <h5 className="modal-title" id="commentModalLabel">Share Your Experience</h5>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+              <h5 className="modal-title">Share Your Experience</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-
             <div className="modal-body">
-              <div className="mb-3">
-                <input
-                  type="text"
-                  name="name"
-                  className="form-control"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                />
-              </div>
-
-              <div className="mb-3">
-                <input
-                  type="text"
-                  name="role"
-                  className="form-control"
-                  placeholder="Role"
-                  value={formData.role}
-                  onChange={handleInputChange}
-                />
-              </div>
-
-              <div className="mb-3">
-                <textarea
-                  name="quote"
-                  className="form-control"
-                  rows="4"
-                  placeholder="Write your comment here..."
-                  value={formData.quote}
-                  onChange={handleInputChange}
-                ></textarea>
-              </div>
+              <input type="text" name="name" className="form-control mb-3" placeholder="Your Name" value={formData.name} onChange={handleInputChange} />
+              <input type="text" name="role" className="form-control mb-3" placeholder="Role" value={formData.role} onChange={handleInputChange} />
+              <textarea name="quote" className="form-control mb-3" rows="4" placeholder="Write your comment here..." value={formData.quote} onChange={handleInputChange}></textarea>
             </div>
-
             <div className="modal-footer border-0 d-flex justify-content-between">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Cancel
-              </button>
-              <button
-                type="button"
-                className="commentBtn"
-                onClick={handleSubmit}
-                data-bs-dismiss="modal"
-              >
-                Submit Comment
-              </button>
+              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" className="commentBtn" onClick={handleSubmit}>Submit Comment</button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Testimonials Section */}
+      {/* Testimonial Section */}
       <section className="testimonial-section" id="testimonials">
         <div className="container">
           <div className="section-header text-center mb-5">
@@ -139,7 +104,7 @@ const TestimonialSection = () => {
             modules={[Pagination, Autoplay]}
             className="mySwiper"
           >
-            {testimonials.map((testimonial, idx) => (
+            {allTestimonials.map((testimonial, idx) => (
               <SwiperSlide key={idx}>
                 <div className="testimonial-box p-4 shadow-sm h-100">
                   <p className="testimonial-quote">“{testimonial.quote}”</p>
@@ -150,13 +115,8 @@ const TestimonialSection = () => {
             ))}
           </Swiper>
 
-          {/* Comment Button */}
           <div className='commentBtnWrapper'>
-            <button
-              className="commentBtn text-center mt-3"
-              data-bs-toggle="modal"
-              data-bs-target="#commentmodal"
-            >
+            <button className="commentBtn text-center mt-3" data-bs-toggle="modal" data-bs-target="#commentmodal">
               Add Your Comment
             </button>
           </div>
