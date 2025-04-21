@@ -25,7 +25,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* padding-left: 0rem;  */
 }
 
 .carousel-caption .container {
@@ -124,12 +123,12 @@
   }
 
   .home-btn {
-    width: 39%;
+    width: 40%;
     font-size: 0.81rem;
   }
 
   .carousel-item img {
-    object-position: center;
+    object-position: right;
   }
 }
 
@@ -149,6 +148,6 @@
   }
 
   .carousel-item img {
-    object-position: center;
+    object-position: right;
   }
 }
