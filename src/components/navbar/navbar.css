@@ -79,3 +79,27 @@
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 480px) {
+ 
+
+  .nav-link {
+    margin: 8px 0;
+    text-align: center;
+  }
+  .logo {
+    width: 120px;
+    height: 30px;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    align-items: flex-start !important;
+  }
+  .navbar-toggler-icon {
+    display: none;
+  }
+  
+}

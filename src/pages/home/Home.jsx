@@ -9,7 +9,7 @@ const slides = [
   {
     img: homeOne,
     text: 'Welcome to Elite Tech Solutions — Empowering Your Business with Innovative Technology Solutions.',
-    btnText: 'Consult Now',
+    btnText: 'Talk Now',
     btnLink: 'https://wa.me/923403394019',
     colorClass: 'slide1',
   },
