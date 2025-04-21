@@ -49,3 +49,17 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 768px) {
+    .bell-heading{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .bell-subheading{
+        font-size: 14px;
+    }
+    .bell-button{
+        font-size: 12px;
+    }
+    
+    
+}
