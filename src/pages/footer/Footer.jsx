@@ -42,14 +42,14 @@ const Footer = () => {
             <p>
               WhatsApp: <a href="https://wa.me/923403394019" target="_blank" rel="noopener noreferrer" className="contact-link">+92 3403394019</a>
             </p>
-            <p>Location: Silicon Valley, CA</p>
+            <p>Location:Lahore, Pakistan</p>
           </div>
         </div>
 
         <hr className="footer-divider" />
 
         <div className="text-center pt-3">
-          <p className="mb-0">&copy; {new Date().getFullYear()} Elite Tech Solutions. All rights reserved.</p>
+          <p className="mb-0">&copy; {new Date().getFullYear()}Elite Tech.All rights reserved.</p>
         </div>
       </div>
     </footer>

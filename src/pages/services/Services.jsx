@@ -95,7 +95,7 @@ const Services = () => {
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="section-title">Our Services</h2>
-          <p className="section-subtitle">Empowering businesses through technology</p>
+          <p className="section-subtitle">Empowering businesses through technologies</p>
         </div>
         <div className="row">
           {servicesData.map((service, idx) => (
