@@ -50,5 +50,15 @@
   .contact-link:hover {
     color: #683695;
   }
+  .social-link {
+    color: #ccc;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color:#683695; 
+  }
+  
   
   

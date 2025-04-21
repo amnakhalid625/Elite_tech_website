@@ -1,6 +1,8 @@
 import React from 'react';
 import './footer.css';
 import { Link } from 'react-router-dom';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+
 const Footer = () => {
   return (
     <footer className="footer-section">
@@ -37,19 +39,32 @@ const Footer = () => {
           <div className="col-md-3">
             <h5 className="footer-title">Contact</h5>
             <p>
-              Email: <a href="mailto:mehakirfan8394@gmail.com" className="contact-link">mehakirfan8394@gmail.com</a>
+              Email:<a href="mailto:mehakirfan8394@gmail.com" className="contact-link">elitetechhub@elitetechhub.tech</a>
             </p>
             <p>
               WhatsApp: <a href="https://wa.me/923403394019" target="_blank" rel="noopener noreferrer" className="contact-link">+92 3403394019</a>
             </p>
-            <p>Location:Lahore, Pakistan</p>
+            <p>House #1285 Block D-1 Mashallah Park</p>
           </div>
+        </div>
+
+        {/* Social Links */}
+        <div className="col-12 text-center mt-4">
+          <a href="https://www.facebook.com/share/12HMjfQ3BMt/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="social-link mx-2">
+            <FaFacebookF />
+          </a>
+          <a href="https://www.instagram.com/elitetechprivatelimited/?igsh=MW1vOHdvNTU5ZWlvNw%3D%3D&utm_source=qr#" target="_blank" rel="noopener noreferrer" className="social-link mx-2">
+            <FaInstagram />
+          </a>
+          <a href="https://www.linkedin.com/company/elite-tech-private-limited/" target="_blank" rel="noopener noreferrer" className="social-link mx-2">
+            <FaLinkedinIn />
+          </a>
         </div>
 
         <hr className="footer-divider" />
 
         <div className="text-center pt-3">
-          <p className="mb-0">&copy; {new Date().getFullYear()}Elite Tech.All rights reserved.</p>
+          <p className="mb-0">&copy; {new Date().getFullYear()} Elite Tech. All rights reserved.</p>
         </div>
       </div>
     </footer>
