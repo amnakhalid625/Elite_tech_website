@@ -128,7 +128,7 @@
   }
 
   .carousel-item img {
-    object-position: right;
+    object-position: center;
   }
 }
 
@@ -148,6 +148,6 @@
   }
 
   .carousel-item img {
-    object-position: right;
+    object-position: center;
   }
 }
