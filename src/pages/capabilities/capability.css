@@ -1,7 +1,6 @@
 .capability-section {
     width: 100%;
     background-color: #683695; 
-}
 
 .capability-container {
     background-color: #683695;
@@ -103,11 +102,23 @@
 
 @media (max-width: 992px) {
     .capability-container h1 {
-        font-size: 42px;
+        font-size: 1.5rem;
     }
-    
+    .capability-container p {
+        font-size: 12px;
+    }
+    .capability-container button{
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+    .case-study h3{
+        font-size: 14px;
+    font-weight: 300 !important;
+    line-height: 30px;
+    margin-bottom: 15px;
+    }
     .background-butterfly {
-        background-size: 45%;
+        background-size: 35%;
         background-image: none !important;
     }
 }
@@ -126,6 +137,14 @@
         background-size: 55%;
         background-position: right -20px bottom -20px;
     }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 80% !important;
+    }
+    .capability-container {
+        padding: 20px 20px 5px 20px;
+        min-height: 400px;}
+}
 }
 
 @media (max-width: 576px) {

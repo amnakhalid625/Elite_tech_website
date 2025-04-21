@@ -8,7 +8,7 @@ import './caseStudy.css';
 
 const CaseStudy = () => {
   return (
-    <section className="casestudy-section container-fluid" id='case-studies'>
+    <section className="casestudy-section container-fluid overflow-hidden" id='case-studies'>
       <div className="container text-center">
         <h1>Case Studies</h1>
         <p className="subheading">

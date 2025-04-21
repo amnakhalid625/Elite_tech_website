@@ -45,4 +45,12 @@
   .about-modern {
     padding: 60px 20px;
   }
+  .about-text p{
+    font-size: 14px;
+  }
+  .btn-explore{
+
+    padding: 8px 25px;
+    font-size: 14px;
+  }
 }

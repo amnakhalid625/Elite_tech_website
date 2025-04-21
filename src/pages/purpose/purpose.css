@@ -26,3 +26,15 @@
     margin-bottom: 16px;
     line-height: 1.7;
   }
+  @media (max-width: 768px) {
+    .purpose-heading {
+      font-size: 32px;
+      font-weight: 700;
+      color: black;
+      margin-bottom: 20px;
+      font-family: "Oswald", sans-serif !important;
+    }
+    .purpose-text{
+      font-size: 14px;
+    }
+}
