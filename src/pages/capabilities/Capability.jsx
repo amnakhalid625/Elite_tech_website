@@ -9,7 +9,7 @@ const Capability = () => {
                     <div className="main-content">
                         <h1>Custom Software Development</h1>
                         <p>Build vital capabilities to deliver digital outcomes.</p>
-                        <button className="explore-btn">Explore</button>
+                    <a href="https://www.seattlenewmedia.com/blog/importance-of-website-for-business"> <button className="explore-btn">Explore</button></a> 
 
                         <div className='capability-headings'>
                             <div className='case-study'>
