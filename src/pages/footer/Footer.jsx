@@ -39,12 +39,14 @@ const Footer = () => {
           <div className="col-md-3">
             <h5 className="footer-title">Contact</h5>
             <p>
-              Email:<a href="mailto:mehakirfan8394@gmail.com" className="contact-link">elitetechhub@elitetechhub.tech</a>
+              Email:<a href="mailto:elitetechhub@elitetechhub.tech" className="contact-link">elitetechhub@elitetechhub.tech</a>
+            </p>
+            <p>
+              Email:<a href="mailto:mehakirfan8394@gmail.com" className="contact-link">Mehakirfan@gmail.com</a>
             </p>
             <p>
               WhatsApp: <a href="https://wa.me/923403394019" target="_blank" rel="noopener noreferrer" className="contact-link">+92 3403394019</a>
             </p>
-            <p>House #1285 Block D-1 Mashallah Park</p>
           </div>
         </div>
 
