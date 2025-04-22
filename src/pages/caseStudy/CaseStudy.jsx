@@ -3,7 +3,7 @@ import one from '../../assets/one.png';
 import two from '../../assets/two.png';
 import three from '../../assets/three.png';
 import four from '../../assets/four.png';
-import five from '../../assets/five.png';
+import five from '../../assets/five1.avif';
 import './caseStudy.css';
 
 const CaseStudy = () => {

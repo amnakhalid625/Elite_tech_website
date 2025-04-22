@@ -42,7 +42,7 @@ const Footer = () => {
               Email:<a href="mailto:elitetechhub@elitetechhub.tech" className="contact-link">elitetechhub@elitetechhub.tech</a>
             </p>
             <p>
-              Email:<a href="mailto:mehakirfan8394@gmail.com" className="contact-link">Mehakirfan@gmail.com</a>
+              Email:<a href="mailto:mehakirfan8394@gmail.com" className="contact-link">mehakirfan@gmail.com</a>
             </p>
             <p>
               WhatsApp: <a href="https://wa.me/923403394019" target="_blank" rel="noopener noreferrer" className="contact-link">+92 3403394019</a>
