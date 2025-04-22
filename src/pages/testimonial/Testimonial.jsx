@@ -116,7 +116,7 @@ const TestimonialSection = () => {
 
           <div className='commentBtnWrapper'>
             <button className="commentBtn text-center mt-3" data-bs-toggle="modal" data-bs-target="#commentmodal">
-              Add Your Comment
+              Add Your Experience
             </button>
           </div>
         </div>
