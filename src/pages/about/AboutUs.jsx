@@ -20,7 +20,7 @@ const About = () => {
               <p>
                 Whether it's custom software, digital transformation, or product development — we're your go-to tech team.
               </p>
-           <a href={pdf} download="AmnaKhalidResume.pdf"><button className="btn-explore">Explore More</button> </a>
+           <a href={pdf} download="CompanyProfile"><button className="btn-explore">Explore More</button> </a>
             </div>
           </div>
 
